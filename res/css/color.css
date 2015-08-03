@@ -1,0 +1,103 @@
+/************
+  MAIN COLOR
+*************/
+
+.main-10{
+  background: #87C0F0;
+}
+
+.main-20{
+  background: #5AA8E9;
+}
+
+.main-30{
+  background: #3694E2;
+}
+
+.main-40{
+  background: #0F7ED9;
+}
+
+.main-50{
+  background: #0763AF;
+}
+
+/************
+  SECONDARY COLOR
+*************/
+
+.second-10{
+  background: #81F3AF;
+}
+
+.second-20{
+  background: #52ED91;
+}
+
+.second-30{
+  background: #2AE877;
+}
+
+.second-40{
+  background: #01E15B;
+}
+
+.second-50{
+  background: #00C04E;
+}
+
+/************
+  THIRD COLOR
+*************/
+
+.third-10{
+  background: #9E8FF2;
+}
+
+.third-20{
+  background: #7965EC;
+}
+
+.third-30{
+  background: #5B42E6;
+}
+
+.third-40{
+  background: #3A1DDE;
+}
+
+.third-50{
+  background: #270DBA;
+}
+
+/************
+  NEUTRALS
+*************/
+
+.white-bg{
+  background: #FFFFFF;
+}
+
+.neutral-10{
+  background: #DADADA;
+}
+
+.neutral-20{
+  background: #BABABA;
+}
+
+.neutral-30{
+  background: #8A8A8A;
+}
+
+.neutral-40{
+  background: #5A5A5A;
+}
+
+.neutral-50{
+  background: #2A2A2A;
+}
+
+.black-bg{
+  background: black;
+}

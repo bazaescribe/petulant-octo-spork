@@ -1,0 +1,142 @@
+/************
+  BUTTONS
+*************/
+
+.ghost-light{
+  background: none;
+  border-radius: 5px;
+  border: 1px solid white;
+  color: white;
+  font-size: 15px;
+  padding: 5px;
+}
+
+.ghost-light:hover{
+  background: white;
+  color: black;
+}
+
+.ghost-light:focus{
+  background: white;
+  color: black;
+}
+
+.ghost-light:active{
+  opacity: 0.85;
+}
+
+.ghost-dark{
+  background: none;
+  border-radius: 5px;
+  border: 1px solid black;
+  color: black;
+  font-size: 15px;
+  padding: 5px;
+}
+
+.ghost-dark:hover{
+  background: black;
+  color: white;
+}
+
+.ghost-dark:focus{
+  background: black;
+  color: white;
+}
+
+.ghost-dark:active{
+  opacity: 0.85;
+}
+
+.ghost-color{
+  background: none;
+  border-radius: 5px;
+  border: 1px solid #2AE877;
+  color: #2AE877;
+  font-size: 15px;
+  padding: 5px;
+}
+
+.ghost-color:hover{
+  background: #2AE877;
+  color: white;
+}
+
+.ghost-color:focus{
+  background: #2AE877;
+  color: white;
+}
+
+.ghost-color:active{
+  opacity: 0.85;
+}
+
+.ghost-color-main{
+  background: none;
+  border-radius: 5px;
+  border: 1px solid #3694E2;
+  color: #3694E2;
+  font-size: 15px;
+  padding: 5px;
+}
+
+.ghost-color-main:hover{
+  background: #3694E2;
+  color: white;
+}
+
+.ghost-color-main:focus{
+  background: #3694E2;
+  color: white;
+}
+
+.ghost-color-main:active{
+  opacity: 0.85;
+}
+
+.solid-btn{
+  background: none;
+  border-radius: 5px;
+  border: 1px solid #7965EC;
+  color: #7965EC;
+  font-size: 15px;
+  padding: 5px;
+}
+
+.solid-btn:hover{
+  background: #7965EC;
+  color: white;
+}
+
+.solid-btn:active{
+  opacity: 0.8;
+}
+
+/************
+  DIVS
+*************/
+
+.container{
+  padding: 0px 15% 0px 15%;
+}
+
+/************
+  LOGOS
+*************/
+
+.allies{
+  max-height: 70px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: 0.3;
+}
+
+.allies img{
+  width: 100%;
+}
+
+.allies:hover{
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  opacity: 1;
+}

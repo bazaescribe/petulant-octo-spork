@@ -1,0 +1,154 @@
+html, body {
+    height:100%;
+}
+
+body{
+  padding: 0px;
+  margin: 0px;
+}
+
+/************
+  COVER
+*************/
+
+.cover{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  top: 0px;
+  z-index: 1;
+}
+
+.cover img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  z-index: 5;
+}
+
+.cover .tinted{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 6;
+}
+
+.cover .title{
+  width: 100%;
+  position: absolute;
+  z-index: 7;
+}
+
+/************
+  MENU
+*************/
+.header{
+  position: fixed;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 2px #323232;
+  width: 100%;
+  height: 0px;
+  z-index: 10;
+  top: 0px;
+}
+
+.logo{
+  display: inline-block;
+  position: absolute;
+  left: 40px;
+  height: 35px;
+  width: 200px;
+  margin: 5px 0px 5px 0px;
+  padding: 0px !important;
+}
+
+.logo img{
+  height: 100%;
+}
+
+.menu{
+  display: inline-block;
+  position: absolute;
+  right: 40px;
+  height: 40px;
+  margin: 5px 0px 5px 0px;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;
+}
+
+.menu ul{
+  padding: 0px;
+  margin-top: 7px;
+}
+
+.menu li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 0px;
+  margin: 0px 5px 0px 0px;
+  font-size: 15px;
+}
+
+.menu a:link{
+  text-decoration: none;
+  color: gray;
+}
+
+.menu a:visited{
+  color: #C2C2C2;
+}
+
+
+/************
+  ROWS
+*************/
+
+.row{
+  width: 100%;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/************
+  CELLS
+*************/
+
+.cell{
+  display: inline-block;
+  vertical-align: top;
+}
+
+/************
+  SPACES
+*************/
+
+.pad-10{
+  padding: 10px;
+}
+
+.pad-30{
+  padding: 30px;
+}
+
+.pad-50{
+  padding: 50px;
+}
+
+.mar-10{
+  margin: 10px;
+}
+
+.mar-30{
+  margin: 30px;
+}
+
+.mar-50{
+  margin: 50px;
+}
