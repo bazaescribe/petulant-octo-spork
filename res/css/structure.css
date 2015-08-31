@@ -256,6 +256,38 @@ body{
   width: 50%;
 }
 
+.thirds{
+  color: white;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+  width: 33.33%;
+}
+
 .mids:hover{
   background-position: 0px -5px;
+}
+
+label{
+  display: block;
+  margin-top: 20px;
+}
+
+.text-input{
+  width: 100%;
+  padding: 5px;
+  background: none;
+  border: 2px solid gray;
+  font-size: 15px;
+  color: #F2F2F2;
+}
+
+.text-input:focus{
+  border-color: #2AE877;
+}
+
+.select{
+  width: 100%;
+  padding: 5px;
+  font-size: 15px;
 }

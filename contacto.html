@@ -20,6 +20,29 @@
 
     <script type="text/javascript" src="res/js/menu.js"></script>
 
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map');
+        var mapOptions = {
+          center: new google.maps.LatLng(19.418227, -99.218036),
+          zoom: 16,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(19.418227, -99.218036),
+          map: map,
+          title: 'Hello World!'
+        });
+
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+
+
   </head>
 
   <body onscroll="scrollChange()">
@@ -66,98 +89,83 @@
       </div>
     </div>
 
-    <div class="cover-section parallax-window" data-parallax="scroll" data-image-src="res/img/photos/office3.jpg">
+    <!--<div class="cover-section parallax-window" data-parallax="scroll" data-image-src="res/img/photos/office3.jpg">-->
+    <div class="cover-section neutral-texture">
       <div class="title white-txt center">
         <div class="wow fadeInDown">
           <span class="light" style="font-size:50px;">
-            ¿Cómo funciona?
+            Contacto
           </span>
         </div>
       </div>
     </div>
 
-    <div class="row pad-30 center reg-txt wow fadeIn">
-      <h4 class="mar-30">Solicita tú crédito con nosotros.</h4>
-      <div class="container center">
-        Es fácil y rápido. Son sólo cuatro sencillos pasos y te damos respuesta en menos de 48 horas.
-      </div>
-    </div>
-
-    <br><br>
-
-    <div class="row center white-txt main-20" style="overflow: hidden;">
-      <div class="cell left pad-30 wow fadeIn" style="max-width: 400px;">
-        <h5>Precalifica tu credito PyME en linea.</h5>
-        <br>
-        <div class="justify">
-          Precalifica tu crédito en linea para que uno de nuestros ejecutivos se ponga en contacto contigo y te ofrezca el producto que concuerda con tus necesidades. Es rápido, seguro y sin compromiso.
+    <div class="cover-section">
+      <div class="title reg-txt center">
+        <div class="cell left mar-30" style="">
+          <h5>
+            <i class="fa fa-home fa-3x"></i>
+          </h5>
+          Paseo de la Reforma 1250.<br>
+          Lomas de Chapultepec.<br>
+          Miguel Hidalgo, 11000 D.F.
+        </div>
+        <div class="cell left mar-30" style="">
+          <div class="cell">
+            <i class="fa fa-phone fa-4x"></i>
+          </div>
+          <div class="cell">
+            <br>
+            (55) 5661-1647
+            <br>
+            01-800 841-4626
+          </div>
           <br><br>
-          <input type="button" name="name" value="Solicitudes para &#13;&#10; personas físicas" class="ghost-light" style="width: 150px; height: 50px;">
-          &nbsp;
-          <input type="button" name="name" value="Solicitudes para &#13;&#10; personas morales" class="ghost-light" style="width: 150px; height: 50px;">
+          <div class="cell">
+            <i class="fa fa-envelope fa-3x"></i>
+          </div>
+          <div class="cell">
+            <br>
+            cgomez@premo.mx
+            <br>
+            01 800 841 4626
+          </div>
+        </div>
+        <div class="cell left mar-10" style="">
+
         </div>
       </div>
-      <div class="cell wow slideInRight">
-        <br><br>
-        <img src="res/img/graph/paso1.png" alt="" style="width: 90%; margin-bottom: -50px;"/>
-      </div>
-      <br><br>
     </div>
 
-    <div class="row center white-txt main-30" style="overflow: hidden;">
-      <div class="cell left pad-30 wow fadeIn" style="max-width: 400px;">
-        <h5>Reune la documentación y acude a la entrevista.</h5>
-        <br>
-        <div class="justify">
-          Reune la documentación necesaria para que a la hora de la entrevista se la entregues al ejecutivo que te atenderá personalmente.
-        </div>
-      </div>
-      <div class="cell wow slideInRight">
-        <br><br>
-        <img src="res/img/graph/paso2.png" alt="" style="width: 90%; margin-bottom: -50px;"/>
-      </div>
-      <br><br><br><br><br>
-    </div>
+    <div class="row white-txt main-20" style="overflow: hidden;">
+      <div class="cell mids pad-50 neutral-40" style="height: 660px;">
+        <h4 class="alt-txt">Contáctanos</h4>
+        <form class="" action="index.html" method="post">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" value="" placeholder="Nombre completo" class="text-input">
+          <label for="phone">Teléfono</label>
+          <input type="text" id="phone" name="name" value="" placeholder="a 10 dígitos" class="text-input">
+          <label for="mail">Correo electrónico</label>
+          <input type="text" id="mail" name="name" value="" placeholder="ejemplo@mail.com" class="text-input">
+          <label for="company">Empresa</label>
+          <input type="text" id="company" name="name" value="" placeholder="Empresa S.A. de C.V." class="text-input">
+          <label for="message">Asunto</label>
+          <input type="text" id="message" name="name" value="" placeholder="¿Cómo podemos ayudarte?" class="text-input">
+          <label for="message">¿Cómo nos conociste?</label>
+          <select class="select" name="">
+            <option value="" disabled="true">Me enteré vía</option>
+            <option value="Internet">Internet</option>
+            <option value="Radio">Radio</option>
+            <option value="Television">Televisión</option>
+            <option value="Feria">Feria</option>
+            <option value="Otros">Otros</option>
+          </select>
+          <br><br><br>
+          <input type="button" name="name" value="Enviar" class="ghost-color-main" style="width: 50%;">
+        </form>
+      </div><!--
+      --><div class="cell mids neutral-40" style="height: 660px;" id="map">
 
-    <div class="row center white-txt main-40" style="overflow: hidden;">
-      <div class="cell left pad-30 wow fadeIn" style="max-width: 400px;">
-        <h5>Entrega de propuesta.</h5>
-        <br>
-        <div class="justify">
-          El ejecutivo te hara llegar la prouesta de crédito que concuerda con tus necesidades de negocio.
-        </div>
-      </div>
-      <div class="cell wow slideInRight">
-        <br><br>
-        <img src="res/img/graph/paso3.png" alt="" style="width: 90%; margin-bottom: -50px;"/>
-      </div>
-      <br><br><br><br><br>
-    </div>
-
-    <div class="row center white-txt main-50" style="overflow: hidden;">
-      <div class="cell left pad-30 wow fadeIn" style="max-width: 400px;">
-        <h5>Formalización y disposición.</h5>
-        <br>
-        <div class="justify">
-          Inmediatamente después de formalizar el contrato de crédito se podrá deisponer de los recursos por medio de transferencia electrónica.
-        </div>
-      </div>
-      <div class="cell wow slideInRight">
-        <br><br>
-        <img src="res/img/graph/paso4.png" alt="" style="width: 90%; margin-bottom: -50px;"/>
-      </div>
-      <br><br><br><br><br>
-    </div>
-
-    <div class="row pad-50 center second-30 white-txt">
-      <div class="cell left wow fadeIn" style="max-width: 300px;">
-        <h3>¿Estás listo?</h3>
-        <h5>Es fácil, rápido y sin compromiso.</h5>
-        <br>
-        <div class="justify">
-          <img src="res/img/graph/precalifica-blue.png" alt="" style="width: 90%; margin-bottom: -50px;"/>
-        </div>
-        <br><br>
       </div>
     </div>
 
