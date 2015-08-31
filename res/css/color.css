@@ -101,3 +101,13 @@
 .black-bg{
   background: black;
 }
+
+.neutral-texture{
+  background: repeating-linear-gradient(
+    30deg,
+    #2A2A2A,
+    #2A2A2A 10px,
+    #252525 10px,
+    #252525 20px
+  );
+}

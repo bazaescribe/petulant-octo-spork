@@ -13,12 +13,12 @@
 
 .ghost-light:hover{
   background: white;
-  color: black;
+  color: gray;
 }
 
 .ghost-light:focus{
   background: white;
-  color: black;
+  color: whitesmoke;
 }
 
 .ghost-light:active{
