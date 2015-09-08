@@ -2,6 +2,7 @@
   FONTS
 *************/
 
+/*
 @font-face {
     font-family: Nova;
     src: url(proxima-nova/ProximaNova-Regular.otf);
@@ -19,10 +20,12 @@
     src: url(proxima-nova/ProximaNova-Light.otf);
 	font-weight: lighter;
 }
+*/
 
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,600);
 
 body{
-  font-family: "Nova";
+  font-family: "Source Sans Pro";
 }
 
 /************
